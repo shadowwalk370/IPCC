@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import time
 import cv2
-import mmcv
 
 st.write("""
 # 一起来看图吧！
