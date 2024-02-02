@@ -175,8 +175,8 @@ unzip mmdeploy-main.zip
 cd env/
 conda activate ipcc
 
-# 安装pytorch及其组件
-sudo apt-get install libopenblas-dev
+# 安装pytorch及其组件，其中第一步若已经进行apt update可以跳过
+# sudo apt-get install libopenblas-dev
 pip install torch-1.11.0-cp38-cp38-linux_aarch64.whl
 pip install torchaudio-0.11.0-cp38-cp38-manylinux2014_aarch64.whl
 pip install torchvision-0.12.0-cp38-cp38-manylinux2014_aarch64.whl
@@ -194,7 +194,7 @@ mim install mmcv==2.0.1
 首先复制Tensorrt并且配置环境变量
 
 ````sh
-# 将Tensorrt复制到虚拟环境中，并打印python版本
+# 将Tensorrt复制到虚拟环境中，并打印trt版本
 export PYTHON_VERSION=3.8
 cp -r /usr/lib/python${PYTHON_VERSION}/dist-packages/tensorrt* ~/miniforge3/envs/ipcc/lib/python${PYTHON_VERSION}/site-packages/
 python -c "import tensorrt; print(tensorrt.__version__)"
