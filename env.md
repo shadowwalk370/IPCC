@@ -130,7 +130,7 @@ sudo apt install nvidia-jetpack
 
 # 安装jetson-stats（需要现在主机本地安装，再在虚拟环境中安装）
 sudo apt install python3-pip
-sudo pip3 install -U jetson-stats
+sudo pip3 install -U jetson-stats==4.2.3
 pip install jetson-stats==4.2.3
 ````
 
