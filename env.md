@@ -237,7 +237,7 @@ pip list
 
 **7. 安装其他依赖项**
 ````sh
-pip install ftfy regex
+pip install ftfy regex h5py pycuda
 ````
 
 **8. 运行测试脚本**
