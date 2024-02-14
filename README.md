@@ -3,9 +3,6 @@
 </div>
 <div align="center">
     <h2>
-        巨型星座网络智能感知与协同计算平台
-    </h2>
-    <h2>
         IPCC : Intelligent Perception and Cooperative Computing Platform on  Constellation Network
     </h2>
 </div>
