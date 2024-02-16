@@ -56,6 +56,79 @@
 
 ## 模型库
 
+目前已经提供的TensorRT后端如下：
+
+<table border="1">
+    <tr >
+        <th rowspan="2" width="200">框架</th>
+        <th rowspan="2" width="150">模型</th>
+        <th rowspan="2" width="100">主干</th>
+        <th colspan="3">量化方式</th>
+    </tr>
+    <tr>
+        <th width="175">no</th>
+        <th width="175">fp16</th>
+        <th width="175">int8</th>
+    </tr>
+    <tr >
+        <td  align="center" rowspan="9">mmsegmentation</td>
+        <td align="center" rowspan="3" >DeepLabV3+</td>
+        <td align="center">ResNet18</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet50</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet101</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center" rowspan="3">PSPNet</td>
+        <td align="center">ResNet18</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet50</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet101</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center" rowspan="3">FCN</td>
+        <td align="center">ResNet18</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet50</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet101</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+        <td align="center">512✅/1024✅</td>
+    </tr>
+</table>
 
 ## 教程文档
 
