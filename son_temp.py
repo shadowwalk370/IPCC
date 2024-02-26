@@ -2,7 +2,7 @@ from dist_socket import son_point
 
 def main():
     ip = "XXX"
-    port = 1000
+    port = 8888
     src = "XXXX"
     dst = "XXXX"
     name = "XXXX"
