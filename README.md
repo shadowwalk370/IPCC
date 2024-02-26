@@ -36,13 +36,13 @@
 
 提供不同数据集场景下的 **多种后端模型** ，涵盖遥感场景分类、遥感地物分割、遥感目标检测等不同任务，并且 **支持fp16与int8量化** ，便于轻松部署和推理
 
-✨ **分布式协同计算** （暂未更新）
+✨ **多星通信组网**
 
-提供大容量数据的分布式推理思路和脚本
+基于底层socket，封装了文件层面的传输，并可进行**命令式交互**，极大简化了传输的流程
 
-✨ **多星通信组网** （暂未更新）
+✨ **分布式协同计算**
 
-提供多张板卡之间的通信组网脚本
+灵感源于pytorch的分布式训练中的通信原语，实现了**文件层面的通信原语操作**，如broadcast、scatter、gather等。
 
 ✨ **半实物仿真与可视化前端** （暂未更新）
 
@@ -53,6 +53,8 @@
 🎉 **2024.2.1** 正式发布IPCC项目，更新了基本的模型推理脚本以及90余个不同的mmseg模型后端。
 
 🎉 **2024.2.6** 更新了后端模型补丁更新脚本、后端检查脚本，修复了模型推理脚本多张图片存储不一致的问题，新增支持mmseg模型后端，总共包含162个不同的后端。
+
+🎉 **2024.2.26** 更新了通信组网代码，可通过极简单的命令式交互轻松进行图片或者文件的传输；将图片推理脚本融合进通信组网的命令式交互当中；新增更新25个遥感场景分类后端，但暂未更新推理脚本。
 
 ## 模型库
 
@@ -128,6 +130,57 @@
         <td align="center">512✅/1024✅</td>
         <td align="center">512✅/1024✅</td>
     </tr>
+    <tr >
+        <td  align="center" rowspan="8">mmpretrain</td>
+        <td align="center" rowspan="3" >ResNet</td>
+        <td align="center">ResNet18</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet50</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
+    <tr>
+        <td align="center">ResNet101</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
+    </tr>
+        <td align="center" rowspan="5" >EfficientNet</td>
+        <td align="center">B0</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
+    <tr>
+        <td align="center">B1</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
+    <tr>
+        <td align="center">B2</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
+    <tr>
+        <td align="center">B3</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
+    <tr>
+        <td align="center">B4</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+        <td align="center">224✅</td>
+    </tr>
 </table>
 
 ## 教程文档
@@ -145,6 +198,13 @@
 
 - [模型推理](./env.md#二jetson-orin-nx开发环境配置)
 - [补丁更新](./patch_update.md)
+
+</details>
+
+<details>
+<summary>通信组网相关</summary>
+
+- [命令式交互通信](./dist.md)
 
 </details>
 
